@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script type="text/javascript" src="promise_array.js">
+    </script>
+    <title>pizda na głową</title>
+</head>
+<link href="tutorial_style.css" rel="stylesheet">
+
+<body>
+    <h1 style="font-size:300%;">
+        TODO:
+    </h1>
+    <p>
+    <ul>
+        <li><s><b>style w innym pliku</b></s> - example is in tuturioal_style.css file and in <b>LINK</b>
+            below<b>HEAD</b> in <b>HTML</b></li>
+        <li><s><b>dostosowanie wielkości img do okna</b></s> it is in tuturioal_style.css</li>
+        <li><s> <a href="#nestedTable">tabela w tabeli</a></s> its the best found by phase : <B>NESTED TABLE</b>
+            <ul>
+                <li>Cite from <a
+                        href="https://www.geeksforgeeks.org/how-to-create-nest-tables-within-tables-in-html/">here</a>
+                </li>
+                <li>In HTML, tables are created using the <b>&lt;table&gt;</b> tag. To nest a table, you simply put one table
+                        insideanother. The outer table is your main table, while the inner table is the one you are
+                        nesting inside.<br>
+                        <b>The key thing to remember is that the inner table must be placed inside
+                            a&lt;td&gt;…&lt;td&gt; (table data cell) <q>of the outer</q> table.</b></li>
+            </ul>
+        </li>
+        <li>dodać format gdzie jest link do zagadnienia a pod spodem wyjaśnienie go </li>
+        <li>wyjaśnienie zagadnienia powinno być w formie rozwijanej po kliknięciu </li>
+        <li>spis treści, który po kliknięciu skacze do danego zagadnienia - tutaj zapewnę parę stron trzeba rozpisać</li>
+        <li>wyrównać tekst do zdjęcia <a href="#alignTextToImg">tu</a> </li>
+        <li><a href="https://www.w3schools.com/js/js_promise.asp" target="_blank">JS promise</a></li>
+        <li>aplikacja dla greyskulla wraz ze zbieraniem danych jak się czujesz oraz by każda karta była do aktualnie wykonywanej serii</li>
+        <li>dodanie komponentu, który sam dodaje punkty do listy itd poprzez wprowadzenie tekstu gdzieś</li>
+    </ul>
+    </p>
+
+    <button onclick="OpenInNewTab(promise_array)">doczytaj o promisach</button>
+
+
+    <h1 style="font-size:300%;">
+        <a href="#continue">tutaj kontynuujesz</a>
+        <hr>
+    </h1>
+
+
+    <h1>Use the HTML &lt;head&gt; element to store &lt;style&gt; and &lt;link&gt; elements (przykład masz już w head)
+        <br> <a href="https://stackoverflow.com/questions/6817262/how-to-display-html-tags-as-plain-text"
+            target="_parent">roziwązanie problemu z tagiem wewnątrz tekstu </a>
+        <br> <a href="https://stackoverflow.com/questions/2820453/how-to-display-raw-html-code-on-an-html-page"
+            target="_top">roziwązanie problemu z tagiem wewnątrz tekstu 2</a>
+    </h1>
+    <hr>
+    <h1><a href="https://stackoverflow.com/questions/18470097/difference-between-self-top-and-parent-in-the-anchor-tag-target-attribute"
+            target="_blank"> ciekawy artykuł a poniżej obraz tłumaczący różne atrybuty hiperlinków (&lt;a&gt;)</a></h1>
+    <hr>
+    <h1>This is heading 1 ale nie zwiększony</h1>
+
+    <p>My first paragraph.<br> pizda </p>
+    <p><strong>This</strong> <em>is a <mark>paragraph</mark>. <del>blue</del></em></p>
+    <p>This is another paragraph <ins>red</ins> <sub>subscripted</sub>.</p>
+
+    <a href="https://www.w3schools.com">This is a link</a>
+
+
+
+    <h2>HTML Table rozpisana wartości tabeli starczy </h2>
+
+    <table>
+        <tr>
+            <th> /th wartości</th>
+            <th> headerami są i idą</th>
+            <th>wierszami</th>
+        </tr>
+        <tr>
+            <td>wiersze /tr </td>
+            <td>są zwykłymi danymi nie nagłówkami jak th</td>
+        </tr>
+    </table>
+
+    <h2>LISTY <br>
+        An unordered list starts with the &lt;ul&gt tag / ordered with &lt;ol&gt. Each list item starts with the
+        &lt;li&gt tag.</h2>
+
+    <ul>
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Milk</li>
+    </ul>
+
+
+    <h2>LISTY <br>
+        An unordered list starts with the &lt;ul&gt tag. Each list item starts with the &lt;li&gt tag.</h2>
+    <hr>
+
+    <br>
+    <h1>Java Script</h1>
+    <h2>lista poprawna (opisana)</h2>
+    <ol>
+        <li>declaration: let a; initialization a = 2</li>
+        <hr>
+        <li><a href="https://www.w3schools.com/js/js_function_closures.asp" target="_blank"><b>JavaScript
+                    Closures</b></a> <br>
+            <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Closures" target="_blank">Mozilla JS
+                Closures - Emulating private methods with closures, Scoping with let and const </a>
+        </li>
+        JS Closures is a feature that allows function within a fuction access mother-function varbiales
+        <br>
+        <div class="parentDiv">
+            <div class="inlineDiv"><img src="img\mozz_closure.png" alt="zachowanie const dla array i objectu"></div>
+            <div class="inlineDivSmaller"><img src="img\mozz_closure_console.png" alt="executed code showing closures">
+            </div>
+        </div>
+        <hr>
+        <li>Callback</li>
+        A callback is a function passed as an argument to another function. When you pass a function as an argument,
+        remember not to use parenthesis.<br> <b> Callback function is executed after normal function- function that
+            called callback as parameter.</b>
+        <table>
+            <th>synchronized - works as normal function (in order of execution/ that has been written)</th>
+            <td><img src="img/callback_execution_order.png" alt="sync callback execution example"></td>
+            <tr>
+                <th>aSYNC</th>
+                <td>Functions running in parallel with other functions are called asynchronous. so the flow (line to
+                    line) is broken/taken aside for aSync functions</td>
+        </table>
+        <hr>
+
+        <li>CSS hierarchy</li>
+        <img src="css_herarchy.png" alt="css styling heirarchy by element" width="100%">
+        <hr>
+
+
+
+
+        </table>
+
+    </ol>
+
+
+    <h2>lista NIEpoprawna (NIE opisana)</h2>
+
+    <ol id="continue">
+        <li>Classes</li>
+        <b>A JavaScript class is not an object.It is a template for JavaScript objects. <br>
+            typeof(class) = function
+            <img src="img/typeofClass.png" alt="consolelog on class" id="alignTextToImg"><br>
+            <img src="js_class.png" alt="class syntax example"><br>
+        </b>
+        <table>
+            <tr>
+                <th><b>TO COVER</b></th>
+                <td>
+                    <ol>
+                        <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes/Static_initialization_blocks"
+                                target="_blank">Static initialization blocks</a> </li>
+                        <li>Polymorphism in oop(opbject oriented programming)</li>
+                        <li></li>
+                    </ol>
+                </td>
+            </tr>
+            <tr>
+                <th>constructor()</th>
+                <td>Class must contains the constructor (constructor()) function that is used to initialization of
+                    created object properties.
+                    If you do not define a constructor method, JavaScript will add an empty constructor method.The
+                    constructor method is called automatically when a new object is created.
+                    const myCar1 = new Car("Ford", 2014); uses constructor - each and every "new xyz" uses constructor
+                </td>
+            </tr>
+            <tr>
+                <th>Defining classes</th>
+                <td><img src="img/class_definition.png" alt="class declaration from mozzilla"></td>
+            </tr>
+            <tr>
+                <th>scrict mode always on in class</th>
+                <td>The body of a class is executed in strict mode even without the "use strict" directive.</td>
+            </tr>
+            <th>Inheritance</th>
+            <td>
+                <ul>
+                    <li>The derived class has access to all <b>public properties of the parent class</b>. In JavaScript,
+                        derived classes are declared with an extends clause, which indicates the class it extends from.
+                    </li>
+                    <li>'extends' is used to create class that inhirts from other class: class XYZ extends ABC</li>
+                    <img src="img/class_inheritance_empty_child.png"
+                        alt="when child object only inhirits parent object and beside that is empty">
+                    <hr>
+                    <li>{... super(abc)} - super()inhirits properties/method from 'parent' class.</li><br>
+                    <img src="img/class_inheritance_constructor.png" alt="w3 Inheritance example"><br>
+                    <img src="img/class_inheritance_methods.png"
+                        alt="mozilla Inheritance example for methods (!constructor)">
+                </ul>
+            </td>
+            </tr>
+            <tr>
+                <th>Hoisting</th>
+                <td>Unlike functions, and other JavaScript declarations, class declarations are not hoisted.That
+                    means that you must declare a class before you can use it</td>
+            </tr>
+            <tr>
+                <th>Private - <b>#</b>xyz</th>
+                <td>
+                    <ul>
+                        <li>A private field is an identifier prefixed with # (the hash symbol).
+                            The hash is an integral part of the field's name, which means a private property can never
+                            have name
+                            clash with a public property.
+                            In order to refer to a private field anywhere in the class, you must declare it in the class
+                            body
+                            (you
+                            can't create a private property on the fly).
+                            Apart from this, a private field is pretty much equivalent to a normal property.<br>
+                            <img src="img/private_accessing.png" alt="example of privete field access in JS">
+                        </li>
+                        <hr>
+                        <li>A class method can read the private fields of other instances, as long as they belong to the
+                            same class.<br>
+                            <img src="img/private_access_within_class.png"><br>
+                            However, if anotherColor is not a Color instance, <B>#values</B> won't exist. (Even if
+                            another class has an identically named #values private field,
+                            it's not referring to the same thing and cannot be accessed here.) Accessing a nonexistent
+                            private property throws an error instead of returning undefined like normal properties do.
+                            If you don't know if a private field exists on an object and you wish to access it without
+                            using try/catch to handle the error, you can use the in operator
+                        </li>
+                        <hr>
+                        <li>There are some limitations in using private properties: the same name can't be declared
+                            twice in a single class, and they can't be deleted. Both lead to early syntax errors.</li>
+                        <hr>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <th>Getters and setters</th>
+                <td><img src="img/class_getters_setters.png"
+                        alt="exmaple of getter and setter and its use as property NOT A METHOD"><br>
+                    It looks as if the object has a <b>property</b> called <q>red</q> — but actually, no such property
+                    exists on the instance!
+                    There are only two methods, but they are <b>prefixed</b> with <b>get</b> and <b>set</b>, which
+                    allows them to be manipulated as if they were properties.
+                </td>
+            </tr>
+            <tr>
+                <th>static</th>
+                <td>Static class methods are defined on the class itself. You cannot call a static method on an
+                    object, only on an object class.
+                    <img src="static_class.png" alt="class static example"><br>
+                </td>
+            </tr>
+        </table>
+        <h1>todo : </h1>
+        <ol>
+            <li><a href="//developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes/Public_class_fields"
+                    target="_blank">public class fields</a></li>
+            </li>
+            <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes/Static_initialization_blocks"
+                    target="_blank">Static initialization blocks</a></li>
+        </ol>
+        <hr>
+        <li>Promise</li>
+        <blockquote>"Producing code" is code that can take some time<br>
+            "Consuming code" is code that must wait for the result<br>
+            A Promise is an Object that links Producing code and Consuming code</blockquote>
+        <img src="promise.png" alt="simple promise example" width="50">
+        <table id="nestedTable">
+            <table>
+                <tr>
+                    <th>Promise<b>.state</b> and Promise<b>.result</b></th>
+                    <td>
+                        <table>
+                            <tr>
+                                <th>myPromise.state</th>
+                                <th>myPromise.result</th>
+                            </tr>
+                            <tr>
+                                <td>"pending"</td>
+                                <td>undefined</td>
+                            </tr>
+                            <tr>
+                                <td>"fulfilled"</td>
+                                <td>a result value</td>
+                            </tr>
+                            <tr>
+                                <td>"rejected"</td>
+                                <td>an error object</td>
+                            </tr>
+                        </table>
+                    <td>
+                <tr>
+                    <th>myPromise.state</th>
+                    <th>myPromise.result</th>
+                </tr>
+                <tr>
+                    <td>"pending"</td>
+                    <td>undefined</td>
+                </tr>
+                <tr>
+                    <td>"fulfilled"</td>
+                    <td>a result value</td>
+                </tr>
+                <tr>
+                    <td>"rejected"</td>
+                    <td>an error object</td>
+                </tr>
+            </table>
+            </td>
+            </tr>
+
+        </table>
+        <br>
+        <quote></quote>from what I understand seems that promises are used to handle async function calls - it force
+        one function to execute(finish) to call another one right after that.</quote>
+        <b>tutaj nie wiem jeszcze do czego służy a i b - let myPromise = new Promise(function(a, b)</b>
+
+
+
+
+
+
+
+
+
+
+        <li><a href="https://www.w3schools.com/js/js_function_closures.asp" target="_blank"><b>JavaScript
+                    Closures</b></a> <br>
+            <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Closures" target="_blank">Mozilla JS
+                Closures - Emulating private methods with closures, Scoping with let and const </a>
+        </li>
+        JS Closures is a feature that allows function within a fuction access mother-function varbiales
+        <br><img src="img\mozz_closure.png" alt="zachowanie const dla array i objectu">
+        <hr>
+
+        <li><a href="https://www.w3schools.com/js/js_let.asp" target="_blank">let </a></li>
+        <li><a href="https://www.w3schools.com/js/js_const.asp" target="_blank">const </a></li>
+        <dd>w const ciekawostka - możemy zmienić zawartość consta ale nie możemy go reassignować: <br> <img
+                src="const.png" alt="zachowanie const dla array i objectu"></dd>
+        <li>gdy inicjujemy zmienną, która jest innym obiektem to nie tworzymy jej kopię tylko dajemy jej drugi adres
+        </li>
+        <br><img src="js_object_mutable.png" alt="zachowanie const dla array i objectu">
+        <li>Escape Characters in JS = /</li>
+        <li>Event</li>
+        <li>w templatach (` xyz `) można też prócz wezwania zmiennej (${abcd}) wykonać jakiś kod</li>
+        <br><img src="tempate.png" alt="zachowanie const dla array i objectu">
+        <li><a href="https://www.w3schools.com/js/js_map_methods.asp" target="_blank">mapy do powtórzenia na bank
+            </a></li>
+        <li><a href="https://www.w3schools.com/js/js_regexp.asp" target="_blank">RegExp</a></li>
+        <li><a href="https://www.w3schools.com/js/js_precedence.asp" target="_blank">kolejność wykonywania działa -
+                precedence</a></li>
+        <li><a href="https://www.w3schools.com/js/js_hoisting.asp" target="_blank">hoisting</a> Hoisting is
+            JavaScript's default behavior of moving all declarations to the top of the current scope (to the top of
+            the current script or the current function).</li>
+        <li><a href="https://www.w3schools.com/js/js_strict.asp" target="_blank">strict mode - doczytać kiedys jak
+                rozumienie będzie większe</a></li>
+        <li><a href="https://www.w3schools.com/js/js_arrow_function.asp" target="_blank">tutaj na pewno znobaczyć -
+                js arrow function.this</a></li>
+        <li>użycie nazewnictwa plików<br><img src="lower_case_file_name.png" alt="użycie nazewnictwa plików" </li>
+        <li>deklaruj obiekty constem <br><img src="declare_obj_with_const.png" alt="deklaruj obiekty constem" </li>
+        <li>nie deklaruj obiektów new coś tam - zrzera to pamieć <br><img src="no_new_object.png"
+                alt="nie deklaruj obiektów new coś tam - zrzera to pamieć " </li>
+        <li><a href="https://www.w3schools.com/js/js_best_practices.asp" target="_blank">JS best practices</a></li>
+        <li><a href="https://www.w3schools.com/js/js_comparisons.asp" target="_blank"><b>porównywanie - do
+                    powtórzenia !</b></a></li>
+        <li><a href="https://www.w3schools.com/js/js_object_accessors.asp" target="_blank">Gettery i settery są już
+                ustalone w JS - traktujemy je jak zmienne. czyli m.in. gdy je wzywamy mimo,
+                ze działają jak funckje dajemy nie używamy na końcu () </a><br><img src="getter_setter.png"
+                alt="użycie nazewnictwa plików" </li>
+        <li>rest parameter - (...args) - może być co chcesz zamiast args<br><img src="rest_parameter.png"
+                alt="rest_parameter in functions" </li>
+        <li>arguments passing and objects passing<br><img src="argument_passing_object_passing.png"
+                alt="argument_passing_object_passing" </li>
+        <li><a href="https://www.w3schools.com/js/js_object_constructors.asp" target=_blank"><b>consturctory</b>
+        </li>
+    </ol>
+
+
+    <script>
+
+        function OpenInNewTab(urlList) {
+            let url = urlList.reverse()
+            urlList.forEach((url) => { window.open(url, '_blank') });
+        }
+
+    </script>
+
+
+</body>
+
+</html>
+</body>
+
+</html>

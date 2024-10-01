@@ -1,0 +1,20 @@
+body {background-color: powderblue;
+  line-height:1,75;}
+h1   {color: rgb(81, 216, 27);font-size:300%;}
+p    {color: red;}
+img {width: auto;}
+
+.parentDiv {
+  text-align: center;
+}
+.inlineDiv {
+  display: inline-block;
+  vertical-align: middle;
+}
+.inlineDivSmaller{
+  display: inline-block;
+  vertical-align: top;
+}
+table, th, td {
+  border: 1px solid black;
+}

@@ -1,0 +1,224 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+<script type="text/javascript"
+        src="lala.js">
+    </script>
+<title>pizda na głową</title>
+</head>
+<link href="tutorial_style.css" rel="stylesheet" >
+<body>
+<h1 style="font-size:300%;">
+TODO:
+</h1>
+<p>
+<ul>
+<li><s><b>style w innym pliku</b></s></li>
+<li><s><b>dostosowanie wielkości img do okna</b></s></li>
+<li> <a href="#nestedTable">tabela w tabeli</a></li>
+<li>dodać format gdzie jest link do zagadnienia a pod spodem wyjaśnienie go </li>
+<li>wyjaśnienie zagadnienia powinno być w formie rozwijanej po kliknięciu </li>
+<li>spis treści, który po kliknięciu skacze do danego zagadnienia - tutaj zapewnę parę stron trzeba rozpisać</li>
+
+
+</ul>
+</p>
+
+ <button onclick="OpenInNewTab(a)">doczytaj o promisach</button> 
+
+
+ <h1 style="font-size:300%;">tutaj kontynuujesz:  
+ <p> <a href="https://www.w3schools.com/js/js_promise.asp" target="_blank">kontynuuj</a> </p>
+ <hr>
+ </h1>
+ 
+
+<h1>Use the HTML &lt;head&gt; element to store &lt;style&gt; and &lt;link&gt; elements (przykład masz już w head)
+<br> <a href="https://stackoverflow.com/questions/6817262/how-to-display-html-tags-as-plain-text"target="_parent">roziwązanie problemu z tagiem wewnątrz tekstu </a>
+<br> <a href="https://stackoverflow.com/questions/2820453/how-to-display-raw-html-code-on-an-html-page"target="_top">roziwązanie problemu z tagiem wewnątrz tekstu 2</a></h1>
+<hr>
+<h1><a href="https://stackoverflow.com/questions/18470097/difference-between-self-top-and-parent-in-the-anchor-tag-target-attribute"target="_blank"> ciekawy artykuł a poniżej obraz tłumaczący różne atrybuty hiperlinków (&lt;a&gt;)</a></h1>
+<hr>
+<h1>This is heading 1 ale nie zwiększony</h1> 
+
+<p>My first paragraph.<br> pizda </p>
+ <p><strong>This</strong> <em>is a <mark>paragraph</mark>. <del>blue</del></em></p>
+<p>This is another paragraph <ins>red</ins> <sub>subscripted</sub>.</p> 
+
+ <a href="https://www.w3schools.com">This is a link</a> 
+ 
+ 
+ 
+ <h2>HTML Table rozpisana wartości tabeli starczy </h2>
+
+<table>
+  <tr>
+    <th> /th wartości</th>
+    <th> headerami są i idą</th>
+    <th>wierszami</th>
+  </tr>
+  <tr>
+    <td>wiersze /tr </td>
+    <td>są zwykłymi danymi nie nagłówkami jak th</td>
+  </tr>
+  </table>
+
+ <h2>LISTY <br>
+ An unordered list starts with the &lt;ul&gt tag / ordered with &lt;ol&gt. Each list item starts with the &lt;li&gt tag.</h2>
+
+ <ul>
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Milk</li>
+</ul> 
+
+
+ <h2>LISTY <br>
+ An unordered list starts with the &lt;ul&gt tag. Each list item starts with the &lt;li&gt tag.</h2>
+<hr>
+
+<br>
+<h1>Java Script</h1>
+<h2>lista poprawna (opisana)</h2>
+<ol>
+<li>declaration: let a; initialization a = 2</li>
+<hr>
+<li>Classes</li>
+<img src="js_class.png" alt="class syntax example"><br>
+const myCar1 = new Car("Ford", 2014); uses constructor - each and every "new xyz" uses constructor<br><br><br>
+<b>A JavaScript class is not an object.It is a template for JavaScript objects.<br><br>
+</b>
+<table>
+<tr>
+	<th>constructor()</th><td>Class must contains the constructor (constructor()) function that is used to initialization of created object properties. 
+If you do not define a constructor method, JavaScript will add an empty constructor method.The constructor method is called automatically when a new object is created.
+const myCar1 = new Car("Ford", 2014); uses constructor - each and every "new xyz" uses constructor</td>
+</tr>
+</tr>
+	<th>extends + super()</th><td>'extends' is used to create class that inhirts from other class: class XYZ extends(ABC) {... super(abc)} - super()inhirits properties from 'mother' class.<br>
+Many programmers use an underscore character _ before the property name to separate the getter/setter from the actual property: <br>
+class Car {<br>
+  constructor(brand) {<br>
+    this._carname = brand;<br>
+  }<br>
+  get carname() {<br>
+    return this._carname;<br>
+  }<br>
+  set carname(x) {<br>
+    this._carname = x;<br>
+  }<br>
+}<br>
+<br>class Car { <br>
+  constructor(name, year) {<br>
+    this.name = name;<br>
+    this.year = year;<br>
+  }<br>
+}<br>
+</tr>
+<tr><th>Hoisting</th><td>Unlike functions, and other JavaScript declarations, class declarations are not hoisted.That means that you must declare a class before you can use it</td>
+</tr>
+<tr>
+<th>static</th>
+<td>Static class methods are defined on the class itself. You cannot call a static method on an object, only on an object class.
+<img src="static_class.png" alt="class static example"><br>
+</td>
+</tr>
+</td>
+</table>
+<hr>
+<li>Callback</li>
+A callback is a function passed as an argument to another function. When you pass a function as an argument, remember not to use parenthesis.<br> <b> Callback function is executed after normal function- function that called callback as parameter.</b>
+<table>
+<th>synchronized - works as normal function (in order of execution/ that has been written)</th>
+<td><img src="sync_callback.png" alt="sync callback execution example"></td>
+<tr>
+	<th>aSYNC</th>
+	<td>Functions running in parallel with other functions are called asynchronous. so the flow (line to line) is broken/taken aside for aSync functions</td>
+</table>
+
+<li>Promise</li>
+ <blockquote>"Producing code" is code that can take some time<br>
+"Consuming code" is code that must wait for the result<br>
+A Promise is an Object that links Producing code and Consuming code</blockquote>
+<img src="promise.png" alt="simple promise example" width="50">
+<table id="nestedTable">
+<tr><th>Promise<b>.state</b> and Promise<b>.result</b></th><table><tr><th>myPromise.state</th><th>myPromise.result</th></tr>
+  <tr><td>"pending"</td><td>undefined</td></tr>
+  <tr><td>"fulfilled"</td><td>a result value</td></tr>
+  <tr><td>"rejected"</td><td>an error object</td></tr>
+  </table><td>
+  <tr><th>myPromise.state</th><th>myPromise.result</th></tr>
+  <tr><td>"pending"</td><td>undefined</td></tr>
+  <tr><td>"fulfilled"</td><td>a result value</td></tr>
+  <tr><td>"rejected"</td><td>an error object</td></tr>
+  
+
+
+</table>
+from what I understand seems that promises are used to handle async function calls - it force one function to execute(finish) to call another one right after that.
+<b>tutaj nie wiem jeszcze do czego służy a i b - let myPromise = new Promise(function(a, b)</b>
+
+</ol>
+
+
+<h2>lista NIEpoprawna (NIE opisana)</h2>
+
+<ol>
+  <li>CSS hierarchy</li>
+  <b>needs to be checkecd</b>
+  This is used if we want to have different values of styling in exceptions ect.<br>
+  <img src="css_herarchy.png" alt="css styling heirarchy by element" width="100%">
+  <hr>
+
+
+
+
+<li><a href="https://www.w3schools.com/js/js_function_closures.asp"target=_blank"><b>JavaScript Closures</b></a></li>
+JS Closures oznacza to, że funkcja może zachować stan zmiennej pomimo, że funkcja wykonała się (normalna funkcja kasuje dane po wykonaniu się) i przydaje się to by nie umieszczać zmiennych globalnych a mieć jest w lokalnych.
+Pozwala to swobodnie używać liczników i zapewne innych fajnych rzeczy poprzez to, że funkcja ma dostęp do scope'u, który ją zawiera (scrope powyżej - "In JavaScript, all functions have access to the scope "above" them"
+
+<li><a href="https://www.w3schools.com/js/js_let.asp" target="_blank">let </a></li>
+<li><a href="https://www.w3schools.com/js/js_const.asp" target="_blank">const </a></li>
+<dd>w const ciekawostka - możemy zmienić zawartość consta ale nie możemy go reassignować: <br> <img src="const.png"  alt="zachowanie const dla array i objectu"></dd>
+<li>gdy inicjujemy zmienną, która jest innym obiektem to nie tworzymy jej kopię tylko dajemy jej drugi adres</li>
+<br><img src="js_object_mutable.png"  alt="zachowanie const dla array i objectu">
+<li>Escape Characters in JS = /</li>
+<li>Event</li>
+<li>w templatach (` xyz `) można też prócz wezwania zmiennej (${abcd}) wykonać jakiś kod</li>
+<br><img src="tempate.png"  alt="zachowanie const dla array i objectu">
+<li><a href="https://www.w3schools.com/js/js_map_methods.asp" target="_blank">mapy do powtórzenia na bank  </a></li>
+<li><a href="https://www.w3schools.com/js/js_regexp.asp" target="_blank">RegExp</a></li>
+<li><a href="https://www.w3schools.com/js/js_precedence.asp" target="_blank">kolejność wykonywania działa - precedence</a></li>
+<li><a href="https://www.w3schools.com/js/js_hoisting.asp" target="_blank">hoisting</a> Hoisting is JavaScript's default behavior of moving all declarations to the top of the current scope (to the top of the current script or the current function).</li>
+<li><a href="https://www.w3schools.com/js/js_strict.asp" target="_blank">strict mode - doczytać kiedys jak rozumienie będzie większe</a></li>
+<li><a href="https://www.w3schools.com/js/js_arrow_function.asp" target="_blank">tutaj na pewno znobaczyć - js arrow function.this</a></li>
+<li>użycie nazewnictwa plików<br><img src="lower_case_file_name.png" alt="użycie nazewnictwa plików"</li>
+<li>deklaruj obiekty constem <br><img src="declare_obj_with_const.png" alt="deklaruj obiekty constem"</li>
+<li>nie deklaruj obiektów new coś tam - zrzera to pamieć  <br><img src="no_new_object.png" alt="nie deklaruj obiektów new coś tam - zrzera to pamieć "</li>
+<li><a href="https://www.w3schools.com/js/js_best_practices.asp" target="_blank">JS best practices</a></li>
+<li><a href="https://www.w3schools.com/js/js_comparisons.asp" target="_blank"><b>porównywanie - do powtórzenia !</b></a></li>
+<li><a href="https://www.w3schools.com/js/js_object_accessors.asp" target="_blank">Gettery i settery są już ustalone w JS - traktujemy je jak zmienne. czyli m.in. gdy je wzywamy mimo, 
+ze działają jak funckje dajemy nie używamy na końcu ()  </a><br><img src="getter_setter.png" alt="użycie nazewnictwa plików"</li>
+<li>rest parameter - (...args) - może być co chcesz zamiast args<br><img src="rest_parameter.png" alt="rest_parameter in functions"</li>
+<li>arguments passing and objects passing<br><img src="argument_passing_object_passing.png" alt="argument_passing_object_passing"</li>
+<li><a href="https://www.w3schools.com/js/js_object_constructors.asp"target=_blank"><b>consturctory</b></li>
+</ol>
+
+
+<script>
+
+function OpenInNewTab(urlList) {
+let url = urlList.reverse()
+  urlList.forEach((url) => { window.open(url, '_blank')});
+}
+
+</script>
+
+
+</body>
+</html>
+</body>
+</html>
+
